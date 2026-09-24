@@ -88,14 +88,12 @@ export const Header: React.FC = () => {
           >
             Enterprise Mobility
           </Link>
-          <a
-            href="https://www.venusgeo.com/about-us/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="nav-link"
+          <Link
+            to="/about-us"
+            className={`nav-link ${location.pathname.startsWith('/about-us') ? 'active' : ''}`}
           >
             About
-          </a>
+          </Link>
         </nav>
 
         {/* Header Action */}
@@ -154,14 +152,13 @@ export const Header: React.FC = () => {
             >
               Enterprise Mobility
             </Link>
-            <a
-              href="https://www.venusgeo.com/about-us/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mobile-nav-link"
+            <Link
+              to="/about-us"
+              onClick={() => setMobileMenuOpen(false)}
+              className={`mobile-nav-link ${location.pathname.startsWith('/about-us') ? 'active' : ''}`}
             >
               About
-            </a>
+            </Link>
             <div className="mobile-nav-cta">
               <a
                 href="/#contact"

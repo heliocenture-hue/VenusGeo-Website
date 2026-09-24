@@ -67,14 +67,9 @@ export const Footer: React.FC = () => {
             <h4 className="footer-group-title">Company</h4>
             <ul className="footer-link-list">
               <li>
-                <a
-                  href="https://www.venusgeo.com/about-us/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="footer-link"
-                >
+                <Link to="/about-us" className="footer-link">
                   About
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="/#contact" className="footer-link">Contact Us</a>
