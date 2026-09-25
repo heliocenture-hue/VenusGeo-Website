@@ -134,7 +134,7 @@ export const ContactSection: React.FC = () => {
                   id="contact-subject"
                   type="text"
                   className={`field-input ${errors.subject ? 'field-error' : ''}`}
-                  placeholder="e.g. Document AI enterprise integration"
+                  placeholder="e.g. Pammy AI enterprise integration"
                   value={formData.subject}
                   onChange={(e) => {
                     setFormData({ ...formData, subject: e.target.value });

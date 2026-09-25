@@ -13,8 +13,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onOpenDetail,
 
   const getProductIcon = (id: string) => {
     switch (id) {
+      case 'pammy-ai':
       case 'document-ai':
         return <FileSearch size={18} />;
+      case 'ultra-passkey':
       case 'private-id':
         return <ShieldCheck size={18} />;
       case 'posmate':

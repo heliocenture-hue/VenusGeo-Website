@@ -15,7 +15,13 @@ export const Home: React.FC = () => {
   // Scroll to hash on load or navigation
   useEffect(() => {
     if (location.hash) {
-      const el = document.querySelector(location.hash);
+      let el = document.querySelector(location.hash);
+      if (!el && location.hash === '#card-document-ai') {
+        el = document.querySelector('#card-pammy-ai');
+      }
+      if (!el && location.hash === '#card-private-id') {
+        el = document.querySelector('#card-ultra-passkey');
+      }
       if (el) {
         setTimeout(() => {
           el.scrollIntoView({ behavior: 'smooth' });

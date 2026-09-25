@@ -30,24 +30,24 @@ export interface ProductItem {
 export const products: ProductItem[] = [
   // Row 1, Left
   {
-    id: 'document-ai',
-    name: 'Document AI',
+    id: 'pammy-ai',
+    name: 'Pammy AI',
     industry: 'Financial Services',
     shortBenefit: 'From documents to clear action.',
     description: 'Turn document-heavy workflows into structured information and clearer decisions.',
     image: '/assets/products/document-ai.jpg',
-    actionText: 'Explore Document AI',
+    actionText: 'Explore Pammy AI',
     destinationType: 'internal-panel',
     pdf: {
-      title: 'Document AI Business Presentation',
+      title: 'Pammy AI Business Presentation',
       subtitle: 'Pammy AI Maritime Operations & Intelligent Automation (12 Slides)',
       url: '/assets/docs/document-ai-business-presentation.pdf',
-      fileName: 'Document-AI-Business-Presentation.pdf',
+      fileName: 'Pammy-AI-Business-Presentation.pdf',
       slideCount: 12,
       fileSize: '2.5 MB'
     },
     detail: {
-      overview: 'Document AI automates end-to-end data extraction and classification from complex, unstructured documents, invoices, legal contracts, and forms.',
+      overview: 'Pammy AI automates end-to-end data extraction and classification from complex, unstructured documents, invoices, legal contracts, and forms.',
       features: [
         'Multi-format intelligent document ingestion (PDF, scan, image)',
         'Key-value and tabular entity recognition with confidence scoring',
@@ -68,13 +68,13 @@ export const products: ProductItem[] = [
   },
   // Row 1, Right
   {
-    id: 'private-id',
-    name: 'Private ID',
+    id: 'ultra-passkey',
+    name: 'Ultra passkey',
     industry: 'Identity & Security',
     shortBenefit: 'Verify identity. Preserve privacy.',
     description: 'Privacy-preserving identity verification for trusted digital access.',
     image: '/assets/products/private-id.jpg',
-    actionText: 'Explore Private ID',
+    actionText: 'Explore Ultra passkey',
     destinationType: 'external',
     url: 'https://privateid.com/'
   },
