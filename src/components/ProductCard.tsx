@@ -227,6 +227,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           border: 1px solid #fecdd3;
           padding: 3px 8px;
           border-radius: 20px;
+          white-space: nowrap;
+          flex-shrink: 0;
         }
 
         .product-industry-badge {
@@ -273,12 +275,37 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
         @media (max-width: 600px) {
           .product-card-media {
-            width: calc(100% - 32px);
-            margin: 0 16px;
+            width: calc(100% - 28px);
+            margin: 0 14px;
             height: 160px;
           }
           .product-card-top-bar {
-            padding: 16px 16px 12px 16px;
+            padding: 14px 14px 10px 14px;
+            gap: 8px;
+          }
+          .product-card-top-bar .icon-red-outline {
+            width: 34px;
+            height: 34px;
+            flex-shrink: 0;
+          }
+          .product-card-top-tags {
+            gap: 6px;
+            flex-shrink: 1;
+            min-width: 0;
+          }
+          .product-pdf-tag {
+            font-size: 0.58rem;
+            padding: 2.5px 7px;
+            gap: 3.5px;
+            white-space: nowrap;
+            flex-shrink: 0;
+          }
+          .product-industry-badge {
+            font-size: 0.6875rem;
+            padding: 3px 8px;
+            gap: 5px;
+            white-space: nowrap;
+            flex-shrink: 1;
           }
         }
 
